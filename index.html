@@ -1873,24 +1873,21 @@ let images = []
 if(type === "blog"){
 images = [
 "images/blog1.png",
-"images/blog2.png",
-
+"images/blog2.png"
 ]
 }
 
 if(type === "blender"){
 images = [
 "images/blender1.png",
-"images/blender2.png",
-
+"images/blender2.png"
 ]
 }
 
 if(type === "unreal"){
 images = [
 "images/unreal1.png",
-"images/unreal2.png",
-
+"images/unreal2.png"
 ]
 }
 
@@ -1902,11 +1899,21 @@ content.appendChild(img)
 
 gallery.style.display="flex"
 
+/* CLOSE FOR DESKTOP */
 gallery.addEventListener("mouseleave",()=>{
 gallery.style.display="none"
 })
 
+/* CLOSE FOR MOBILE (tap anywhere) */
+gallery.addEventListener("click",()=>{
+gallery.style.display="none"
+})
+
 }
+
+
+
+
 
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-links a");
