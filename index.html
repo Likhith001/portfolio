@@ -805,6 +805,69 @@ color:var(--gold-bright);
 width:100%;
 }
 
+
+/* ── ACHIEVEMENTS ── */
+
+#achievements{
+background: var(--navy);
+padding: 8rem 4rem;
+}
+
+.achievements-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:2px;
+}
+
+.achievement-card{
+background: var(--navy-light);
+padding: 2.5rem;
+border: 1px solid rgba(201,168,76,0.08);
+transition: transform 0.4s ease, border-color 0.4s;
+}
+
+.achievement-card:hover{
+transform: translateY(-4px);
+border-color: rgba(201,168,76,0.25);
+}
+
+.achievement-title{
+font-family: 'Cormorant Garamond', serif;
+font-size: 1.5rem;
+color: var(--white);
+margin-bottom: 1rem;
+}
+
+.achievement-desc{
+font-size: 1rem;
+line-height: 1.9;
+color: var(--text-dim);
+margin-bottom: 1.5rem;
+}
+
+.achievement-link{
+font-size: 0.65rem;
+letter-spacing: 0.25em;
+text-transform: uppercase;
+color: var(--gold);
+text-decoration: none;
+border-bottom: 1px solid rgba(201,168,76,0.3);
+padding-bottom: 3px;
+transition: color 0.3s, border-color 0.3s;
+}
+
+.achievement-link:hover{
+color: var(--gold-bright);
+border-color: var(--gold-bright);
+}
+
+.achievement-img{
+width:100%;
+margin-top:1rem;
+border:1px solid rgba(201,168,76,0.2);
+}
+
+
 /* CONTACT FORM */
 
 #contact-form{
@@ -1141,6 +1204,7 @@ cursor:auto;
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Work</a></li>
+    <li><a href="#achievements">Achievements</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -1470,6 +1534,62 @@ GitHub →
 <button class="project-link gallery-btn">
 Project Gallery →
 </button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ACHIEVEMENTS -->
+
+<section id="achievements">
+
+<div class="reveal" style="margin-bottom:4rem;">
+<p class="section-label">Highlights</p>
+<h2 class="section-title">Key <em>Achievements</em></h2>
+</div>
+
+<div class="achievements-grid">
+
+<!-- Achievement 1 -->
+<div class="achievement-card reveal">
+<div class="achievement-title">Kaggle Contributor Badge</div>
+<div class="achievement-desc">
+Earned Kaggle Contributor badge with 2+ years of consistent participation in data science competitions and notebooks.
+</div>
+
+<a href="https://www.kaggle.com/certification/badges/likhithkadambala/50"
+target="_blank"
+class="achievement-link">
+View Certificate →
+</a>
+</div>
+
+<!-- Achievement 2 -->
+<div class="achievement-card reveal">
+<div class="achievement-title">Kaggle Python Badge</div>
+<div class="achievement-desc">
+Recognized for proficiency in Python programming through Kaggle certification.
+</div>
+
+<a href="https://www.kaggle.com/certification/badges/likhithkadambala/30"
+target="_blank"
+class="achievement-link">
+View Certificate →
+</a>
+</div>
+
+<!-- Achievement 3 -->
+<div class="achievement-card reveal">
+<div class="achievement-title">LinkedIn Technical Content</div>
+<div class="achievement-desc">
+Authored machine learning posts generating 5,000+ impressions and strong engagement with professionals.
+</div>
+
+<img src="images/impressions.png" alt="LinkedIn Impressions" class="achievement-img">
 
 </div>
 
